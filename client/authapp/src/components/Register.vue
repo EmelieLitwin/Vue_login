@@ -13,24 +13,6 @@
           v-model="register.username"
           required
         />
-        <!-- <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          class="form-control mb-3"
-          placeholder="Choose a password"
-          v-model="register.password"
-          required
-        />
-        <label for="passwordConfirm">Repeat password:</label>
-        <input
-          type="password"
-          id="passwordConfirm"
-          class="form-control mb-3"
-          placeholder="Repeat password"
-          v-model="register.passwordConfirm"
-          required
-        /> -->
         <label for="password">Password:</label>
         <VuePassword
           id="password"

@@ -13,15 +13,6 @@
           required
         />
 
-        <!-- <label for="password">Password:</label>
-        <input
-          type="password"
-          class="form-control mb-3"
-          placeholder="Write password here..."
-          v-model="login.password"
-          required
-        /> -->
-
         <label for="password">Password:</label>
         <VuePassword
           id="password"
