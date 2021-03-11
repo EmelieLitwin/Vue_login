@@ -59,6 +59,12 @@ export default {
           if (token) {
             localStorage.setItem("jwt", token);
             this.$router.push("/");
+            swal({
+              icon: "success",
+              title: "Registration was successful",
+              button: true,
+              timer: 1500,
+            });
           }
         } catch (err) {
           let error = err.response;
