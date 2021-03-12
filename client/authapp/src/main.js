@@ -9,7 +9,6 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
-
 Vue.use(VuePassword)
 
 
@@ -18,7 +17,6 @@ const base = axios.create({
 });
 
 Vue.prototype.$http = base;
-Vue.config.productionTip = false;
 
 new Vue({
   router,

@@ -15,7 +15,7 @@ exports.registerNewUser = async (req, res) => {
     });
 
     let data = await user.save();
-    const token = await user.generateTokenRegister(); 
+    const token = await user.generateToken(); 
     res.status(201).json({ data, token });
   } catch (err) {
     res.status(400).json({ err: err });
@@ -26,7 +26,7 @@ exports.loginUser = async (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
     const user = await User.findByCredentials(username, password);
-    const token = await user.generateTokenLogin();
+    const token = await user.generateToken();
     res.status(201).json({ user, token });
   } catch (err) {
     res.status(400).json({ err: err });
